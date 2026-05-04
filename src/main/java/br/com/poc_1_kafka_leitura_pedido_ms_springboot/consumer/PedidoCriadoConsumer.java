@@ -16,7 +16,7 @@ public class PedidoCriadoConsumer {
 
     @KafkaListener(
             topics = "${config.kafka.topics.pedidos-criados}",
-            groupId = "ltf.pedidos-criados"
+            groupId = "group.pedidos-criados"
     )
     public void listen(String json) {
         try {
