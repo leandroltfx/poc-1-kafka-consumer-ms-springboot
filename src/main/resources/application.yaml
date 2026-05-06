@@ -9,4 +9,4 @@ config:
   kafka:
     bootstrap-server-config: "localhost:29092"
     topics:
-      pedidos-criados: 'poc1.pedidos-criados'
+      poc-1-messages: 'poc-1-messages'

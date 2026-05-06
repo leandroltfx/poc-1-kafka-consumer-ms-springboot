@@ -1,4 +1,4 @@
-package br.com.poc_1_kafka_leitura_pedido_ms_springboot.config;
+package br.com.poc_1_kafka_consumer_ms_springboot.config;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
