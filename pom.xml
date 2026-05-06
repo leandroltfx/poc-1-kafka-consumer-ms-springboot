@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com</groupId>
-	<artifactId>poc-1-kafka-leitura-pedido-ms-springboot</artifactId>
+	<artifactId>poc-1-kafka-consumer-ms-springboot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name/>
 	<description/>

@@ -1,6 +1,6 @@
 package br.com.poc_1_kafka_leitura_pedido_ms_springboot.consumer;
 
-import br.com.poc_1_kafka_leitura_pedido_ms_springboot.dto.PedidoCriadoDTO;
+import br.com.poc_1_kafka_leitura_pedido_ms_springboot.dto.ConsumerDTO;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Component
 @RequiredArgsConstructor
 @Slf4j
-public class PedidoCriadoConsumer {
+public class KafkaConsumer {
 
     private final ObjectMapper objectMapper;
 
@@ -20,7 +20,7 @@ public class PedidoCriadoConsumer {
     )
     public void listen(String json) {
         try {
-            var pedidoCriado = objectMapper.readValue(json, PedidoCriadoDTO.class);
+            var pedidoCriado = objectMapper.readValue(json, ConsumerDTO.class);
             log.info("Pedido recebido com sucesso", pedidoCriado);
         } catch (Exception e) {
             throw new RuntimeException(e);
